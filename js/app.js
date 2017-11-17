@@ -6,10 +6,12 @@ window.addEventListener('load', function () {
         var container = document.createElement('div');
         var form = document.createElement('input')
         var btnSave = document.createElement('button');
+        var btnClose = document.createElement('i');
         var parentSection = document.getElementById('container')
         /*Agregando al html */
         container.appendChild(form);
         container.appendChild(btnSave);
+        container.appendChild(btnClose);
         parentSection.appendChild(container);
         /* Agregando Atributos */
         container.setAttribute('class', 'box-form');
@@ -17,6 +19,8 @@ window.addEventListener('load', function () {
         form.setAttribute('class', 'input-style');
         btnSave.setAttribute('class', 'btn-style');
         btnSave.setAttribute('id','save-js');
+        btnClose.setAttribute('class','fa fa-times btn-close-style');
+        
         /*agregando texto al boton*/
         btnSave.textContent = 'Guardar';
         /*Borrar al div inicial */
@@ -65,17 +69,17 @@ window.addEventListener('load', function () {
                     textAreaList.value='';
                 })
                 
-
-
-                
-
-
             })
 
-
-
-
         })
+        /*btnClose.addEventListener('click',function(){
+            var initialBox = document.createElement('div');
+            initialBox.setAttribute('class','box-list add-list');
+            initialBox.textContent = 'Añadir una lista...';
+            parentSection.removeChild(container);
+            parentSection.appendChild(initialBox);
+
+        })*/
 
     })
 

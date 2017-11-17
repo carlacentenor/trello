@@ -94,6 +94,16 @@ header{
     
 }
 
+.btn-close-style{
+    font-size: 30px;
+    display: inline-block;
+    color: #999999;
+    margin-left: 5px;
+    position: relative;
+    top: 5px;
+    
+}
+
 .btn-style:hover{
     background-color: #4d9439;
 }
