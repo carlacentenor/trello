@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,29 +8,31 @@
     <link rel="stylesheet" href="css/main.css">
     <title>Trello</title>
 </head>
-
 <body>
     <header>
-        <p class="box-table inline">
-            <span class="fa fa-trello"></span>Tableros</p>
-        <div class="box-search">
-            <input type="text">
-            <i class="fa fa-search"></i>
-        </div>
-        <figure>
-            <img src="assets/images/logo.png" alt="">
+        <div class="header-left">
+            <p class="box-table"><span class="fa fa-trello"></span>Tableros</p></div>  
+            <div class="box-input-search" ><div class="box-search"><input type="text"><i class="fa fa-search"></i></div></div>
+            <figure>
+            <img src="assets/images/logo.png" alt="logo">
         </figure>
-
+        <div class="header-rigth">
+            <ul>
+                <li><i class="fa fa-plus"></i></li>
+                <li><i class="fa fa-bell-o"></i></li>
+                <li><i class="fa fa-info"></i></li>
+            </ul>   
+        </div>
     </header>
     <main>
         <section class="box-title-table">
-            <p class="inline title-table">Tablero</p>
-            <i class="inline fa fa-star-o"></i>
-            <i class="fa fa-lock"></i>
-            <p class="inline">Privado</p>
-            <p class="inline-menu">Mostrar menú</p>
-
-
+            <ul>
+                <li class="title-bold">Tablero</li>
+                <li><i class=" fa fa-star-o"></i></li>
+                <li><i class="fa fa-lock"></i></li>
+                <li><p>Privado</p></li>
+                <li class="text-menu"><a href="#">Mostrar menú</a></li>
+            </ul>
         </section>
         <section id="container">
             <div class="box-list add-list">Añadir una lista...</div>
@@ -40,5 +41,4 @@
     </main>
     <script src="js/app.js"></script>
 </body>
-
 </html>

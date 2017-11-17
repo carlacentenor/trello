@@ -29,8 +29,10 @@ header{
     float: left;
 }
 
-.box-list:hover{
+.box-list:hover , .box-title-table li:hover{
     background-color:rgba(25, 27, 25,0.5);
+    border-radius: 5px;
+    cursor: pointer;
 }
 
 .box-form {
@@ -135,23 +137,31 @@ header{
    
 }
 
-.inline {
-    display: inline-block;
-    margin: 10px;
-}
-.inline-menu{
-    float: right;
-    margin: 10px;
-}
 
 .box-title-table {
     color: white;
     margin: 10px;
+    
 }
 
-.title-table{
-    font-size: 18px;
+.box-title-table li {
+    display: inline-block;
+    margin:0px 5px;
+    box-sizing: content-box;
+    padding: 5px;
+    
+}
+
+.text-menu{
+    float: right;
+}
+
+.text-menu a {
+    color: white;
+}
+.title-bold{
     font-weight: 700;
+
 }
 
 .box-table{
@@ -163,37 +173,20 @@ header{
     height: 30px;;
     border-radius: 5px;
     text-align: center;
-    position: relative;
-    bottom: 5px;
+    margin: 5px;
+   
 }
 
 .box-table span {
     margin-right: 10px;
 }
 
-header input {
-    border: none;
-    background: transparent;
-    height: 25px;
-}
-
-header img {
-    width:6%; 
-}
-
-header figure {
-    position: relative;
-    left: 50%;
-    bottom: 42px;
-}
-
 .box-search {
     background-color: rgba(255, 255, 255,0.3);
     height: 30px;
     border-radius: 5px;
-    position: relative;
-    bottom: 7px;
     display: inline-block;
+    margin: 5px 10px;;
 }
 
 .box-search i {
@@ -202,3 +195,40 @@ header figure {
     top: 5px;
     }
 
+
+.box-search input {
+    border: none;
+    background: transparent;
+    height: 25px;
+}
+
+header img {
+    width:100px; 
+}
+
+header figure {
+    width: 100px;
+    height: 30px;
+    margin: 5px 0 0px 25%;
+}
+
+.header-left, .header-rigth, header figure ,.box-input-search{
+    float: left;
+    height: 40px;
+}
+
+
+.header-rigth li {
+    display: inline-block;
+    height: 30px;
+    width: 30px;
+    text-align: center;
+    padding: 5px;
+    margin: 5px 2.5px;
+    background-color: rgba(255, 255, 255,0.3);
+    border-radius: 5px;
+}
+
+.header-rigth {
+    margin-left: 400px;
+}
